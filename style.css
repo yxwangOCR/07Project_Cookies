@@ -1,4 +1,47 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: red;
+    min-height: 100vh;
+    padding: clamp(20px, 5vw, 50px) 20px 10px;
+    background-image: linear-gradient(to right, pink, yellow);
     font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 span {
+    font-weight: 700;
+}
+
+.container {
+    background-color: aqua;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container label {
+    background: red;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.input-group:nth-child(1) {
+    background-color: pink;
+}
+
+.input-group:nth-child(2) {
+    background-color: blueviolet;
+    margin-top: 30px;
 }
